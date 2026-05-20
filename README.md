@@ -95,6 +95,10 @@ node skillmatch.js
 
 ## Organização do projeto
 
+---
+
+## Projeto desenvolvido para fins educacionais no curso SC Tec.
+
 O desenvolvimento foi organizado utilizando metodologia Kanban com Trello.
 
 ---
