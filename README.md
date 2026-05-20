@@ -101,6 +101,14 @@ O desenvolvimento foi organizado utilizando metodologia Kanban com Trello.
 
 ---
 
+## Organização Kanban
+
+O gerenciamento das tarefas do projeto foi realizado utilizando Trello:
+
+[Quadro Kanban do Projeto](https://trello.com/invite/b/6a0cf2409b4e5b8cde9c39ce/ATTI25e75bce028d6fc58491c50191319deb64D06B6F/skillmatch-js)
+
+---
+
 ## Projeto desenvolvido para fins educacionais no curso SC Tec.
 
 ---
