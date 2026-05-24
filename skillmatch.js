@@ -4,6 +4,8 @@
 // Mini-Projeto Avaliativo - Módulo 01 - Semana 06
 // ======================================================
 
+console.clear();
+
 // Objeto que representa a pessoa candidata
 const candidato = {
   nome: "Tainara",
@@ -113,10 +115,10 @@ const classificarCompatibilidade = (percentual) => {
 };
 // Função que analisa uma vaga e retorna um objeto com o resultado
 const analisarVaga = (vaga) => {
-  const habilidadesAtendidas = encontrarHabilidadesAtendidas(vaga);
-  const habilidadesFaltantes = encontrarHabilidadesFaltantes(vaga);
-  const compatibilidade = calcularCompatibilidade(vaga);
-  const classificacao = classificarCompatibilidade(compatibilidade);
+  let habilidadesAtendidas = encontrarHabilidadesAtendidas(vaga);
+  let habilidadesFaltantes = encontrarHabilidadesFaltantes(vaga);
+  let compatibilidade = calcularCompatibilidade(vaga);
+  let classificacao = classificarCompatibilidade(compatibilidade);
 
   return {
     empresa: vaga.empresa,
@@ -215,14 +217,14 @@ const verificarTodosRequisitos = (vaga) => {
 };
 // Função para demonstrar o uso do find e do every
 const exibirExemplosDeMetodos = () => {
-  const vagaRemota = encontrarVagaRemota();
+  let vagaRemota = encontrarVagaRemota();
 
   console.log("----------------------------------------");
   console.log("===== EXEMPLOS DE FIND E EVERY =====");
 
   console.log(`Primeira vaga remota encontrada: ${vagaRemota.exibirResumo()}`);
 
-  const atendeTodosRequisitos = verificarTodosRequisitos(vagaRemota);
+  let atendeTodosRequisitos = verificarTodosRequisitos(vagaRemota);
 
   console.log(
     `A candidata atende todos os requisitos dessa vaga? ${atendeTodosRequisitos}`,
@@ -266,7 +268,7 @@ const buscarVagasSimuladas = () => {
 const iniciarSistema = async () => {
   console.log("Carregando vagas...");
 
-  const vagasCarregadas = await buscarVagasSimuladas();
+  let vagasCarregadas = await buscarVagasSimuladas();
 
   console.log("Vagas carregadas com sucesso!");
   console.log(`Total de vagas carregadas: ${vagasCarregadas.length}`);

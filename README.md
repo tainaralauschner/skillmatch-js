@@ -71,25 +71,18 @@ O projeto analisa:
 
 ---
 
-## Como executar o projeto
+## Como executar
 
-1. Clone o repositório:
+Este projeto não precisa de Node.js.
 
-```bash
-git clone https://github.com/tainaralauschner/skillmatch-js.git
-```
+Você pode executar de uma destas formas:
 
-2. Acesse a pasta:
-
-```bash
-cd skillmatch-js
-```
-
-3. Execute o projeto:
-
-```bash
-node skillmatch.js
-```
+1. Abrir o navegador Google Chrome.
+2. Pressionar F12 ou Ctrl + Shift + J.
+3. Abrir a aba Console.
+4. Copiar o código do arquivo skillmatch.js.
+5. Colar no console.
+6. Pressionar Enter.
 
 ---
 
