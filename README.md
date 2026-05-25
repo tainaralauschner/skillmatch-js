@@ -9,6 +9,7 @@ Mini projeto avaliativo desenvolvido no curso SC Tec utilizando JavaScript.
 O sistema SkillMatch JS simula uma plataforma de análise de compatibilidade entre candidatos e vagas da área de tecnologia.
 
 O projeto analisa:
+
 - habilidades do candidato;
 - requisitos das vagas;
 - percentual de compatibilidade;
@@ -57,6 +58,7 @@ A palavra-chave var não foi utilizada, pois possui escopo menos seguro e é men
 ## Conceitos aplicados
 
 ### Estruturas básicas
+
 - Variáveis
 - Arrays
 - Objetos
@@ -65,6 +67,7 @@ A palavra-chave var não foi utilizada, pois possui escopo menos seguro e é men
 - Laços de repetição
 
 ### Métodos de array
+
 - map()
 - filter()
 - find()
@@ -72,12 +75,14 @@ A palavra-chave var não foi utilizada, pois possui escopo menos seguro e é men
 - reduce()
 
 ### Programação orientada a objetos
+
 - Classes
 - Herança
 - Constructor
 - this
 
 ### Conceitos avançados
+
 - Callback
 - Closure
 - Promise
@@ -112,6 +117,17 @@ Você pode executar de uma destas formas:
 
 ---
 
+## Estrutura do projeto
+
+```txt
+skillmatch-js/
+│
+├── skillmatch.js
+└── README.md
+```
+
+---
+
 ## Organização do projeto
 
 O desenvolvimento foi organizado utilizando metodologia Kanban com Trello.
@@ -126,6 +142,19 @@ O gerenciamento das tarefas do projeto foi realizado utilizando Trello:
 
 ---
 
+## Versionamento e branches
+
+O projeto foi versionado com Git e publicado no GitHub.
+
+Branches utilizadas:
+
+- main: branch principal do projeto.
+- develop: branch de apoio ao desenvolvimento.
+- feat/analise-vagas: branch criada para representar a funcionalidade principal de análise das vagas.
+- docs/readme: branch criada para ajustes e documentação do README.
+
+---
+
 ## Repositório no GitHub
 
 O código-fonte do projeto está disponível no GitHub:
@@ -134,7 +163,15 @@ O código-fonte do projeto está disponível no GitHub:
 
 ---
 
-## Projeto desenvolvido para fins educacionais no curso SC Tec.
+## Vídeo de apresentação
+
+O vídeo de apresentação será disponibilizado após a gravação.
+
+[Vídeo de apresentação](COLE_AQUI_O_LINK_DO_VIDEO)
+
+---
+
+Projeto desenvolvido para fins educacionais no curso SC Tec.
 
 ---
 
