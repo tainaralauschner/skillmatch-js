@@ -21,10 +21,36 @@ O projeto analisa:
 ## Tecnologias utilizadas
 
 - JavaScript
-- Node.js
 - Git
 - GitHub
 - Trello (Kanban)
+
+---
+
+## Extensões utilizadas ou recomendadas
+
+- Code Runner: utilizada para testar o código JavaScript no VS Code.
+- Prettier - Code formatter: utilizada para organizar e formatar o código.
+
+---
+
+## Como a internet funciona
+
+A internet funciona por meio da comunicação entre computadores conectados em rede. Em aplicações web, normalmente um cliente, como o navegador, envia uma requisição para um servidor, que processa essa solicitação e devolve uma resposta.
+
+---
+
+## Arquitetura cliente-servidor
+
+Na arquitetura cliente-servidor, o cliente solicita informações e o servidor responde com os dados necessários. Neste projeto, essa comunicação foi simulada com uma Promise e async/await, representando o carregamento das vagas como se viessem de um servidor.
+
+---
+
+## Uso de var, let e const
+
+Neste projeto foram utilizados let e const. O const foi usado para valores que não precisam ser reatribuídos, como funções, objetos principais e listas. O let foi usado em situações em que o valor poderia variar durante a execução.
+
+A palavra-chave var não foi utilizada, pois possui escopo menos seguro e é menos recomendada em JavaScript moderno.
 
 ---
 
@@ -88,8 +114,6 @@ Você pode executar de uma destas formas:
 
 ## Organização do projeto
 
----
-
 O desenvolvimento foi organizado utilizando metodologia Kanban com Trello.
 
 ---
@@ -99,6 +123,14 @@ O desenvolvimento foi organizado utilizando metodologia Kanban com Trello.
 O gerenciamento das tarefas do projeto foi realizado utilizando Trello:
 
 [Quadro Kanban do Projeto](https://trello.com/invite/b/6a0cf2409b4e5b8cde9c39ce/ATTI25e75bce028d6fc58491c50191319deb64D06B6F/skillmatch-js)
+
+---
+
+## Repositório no GitHub
+
+O código-fonte do projeto está disponível no GitHub:
+
+[Repositório SkillMatch JS](https://github.com/tainaralauschner/skillmatch-js)
 
 ---
 
