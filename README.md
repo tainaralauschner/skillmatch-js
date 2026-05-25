@@ -167,7 +167,7 @@ O código-fonte do projeto está disponível no GitHub:
 
 O vídeo de apresentação será disponibilizado após a gravação.
 
-[Vídeo de apresentação](COLE_AQUI_O_LINK_DO_VIDEO)
+[Vídeo de apresentação](https://drive.google.com/file/d/1vPRkOvAnuNbWx9PPF6Pd7E3LQI30gdBW/view?usp=sharing)
 
 ---
 
