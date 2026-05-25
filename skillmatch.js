@@ -113,12 +113,21 @@ const classificarCompatibilidade = (percentual) => {
     return "Baixa compatibilidade";
   }
 };
+
+// O every verifica se o candidato possui todos os requisitos de uma vaga
+const verificarTodosRequisitos = (vaga) => {
+  return vaga.requisitos.every((requisito) => {
+    return candidato.habilidades.includes(requisito);
+  });
+};
+
 // Função que analisa uma vaga e retorna um objeto com o resultado
 const analisarVaga = (vaga) => {
   let habilidadesAtendidas = encontrarHabilidadesAtendidas(vaga);
   let habilidadesFaltantes = encontrarHabilidadesFaltantes(vaga);
   let compatibilidade = calcularCompatibilidade(vaga);
   let classificacao = classificarCompatibilidade(compatibilidade);
+  let atendeTodosRequisitos = verificarTodosRequisitos(vaga);
 
   return {
     empresa: vaga.empresa,
@@ -130,6 +139,7 @@ const analisarVaga = (vaga) => {
     classificacao: classificacao,
     habilidadesAtendidas: habilidadesAtendidas,
     habilidadesFaltantes: habilidadesFaltantes,
+    atendeTodosRequisitos: atendeTodosRequisitos,
   };
 };
 // O map cria um novo array com a análise de todas as vagas
@@ -148,6 +158,11 @@ const exibirResultados = () => {
     console.log(`Salário: R$ ${resultados[i].salario}`);
     console.log(`Compatibilidade: ${resultados[i].compatibilidade}%`);
     console.log(`Classificação: ${resultados[i].classificacao}`);
+    console.log(
+      `Atende todos os requisitos? ${
+        resultados[i].atendeTodosRequisitos ? "Sim" : "Não"
+      }`,
+    );
     console.log(
       `Habilidades encontradas: ${resultados[i].habilidadesAtendidas.join(", ")}`,
     );
@@ -209,27 +224,21 @@ const encontrarVagaRemota = () => {
     return vaga.modalidade === "Remoto";
   });
 };
-// O every verifica se o candidato possui todos os requisitos de uma vaga
-const verificarTodosRequisitos = (vaga) => {
-  return vaga.requisitos.every((requisito) => {
-    return candidato.habilidades.includes(requisito);
-  });
-};
-// Função para demonstrar o uso do find e do every
-const exibirExemplosDeMetodos = () => {
+
+// Função que exibe a primeira vaga remota encontrada
+const exibirPrimeiraVagaRemota = () => {
   let vagaRemota = encontrarVagaRemota();
 
   console.log("----------------------------------------");
-  console.log("===== EXEMPLOS DE FIND E EVERY =====");
+  console.log("===== PRIMEIRA VAGA REMOTA ENCONTRADA =====");
 
-  console.log(`Primeira vaga remota encontrada: ${vagaRemota.exibirResumo()}`);
-
-  let atendeTodosRequisitos = verificarTodosRequisitos(vagaRemota);
-
-  console.log(
-    `A candidata atende todos os requisitos dessa vaga? ${atendeTodosRequisitos}`,
-  );
+  if (vagaRemota) {
+    console.log(vagaRemota.exibirResumo());
+  } else {
+    console.log("Nenhuma vaga remota foi encontrada.");
+  }
 };
+
 // Função que recebe outra função como parâmetro
 const finalizarAnalise = (nomeCandidato, callback) => {
   console.log("----------------------------------------");
@@ -278,7 +287,7 @@ const iniciarSistema = async () => {
   exibirResultados();
   exibirMelhorVaga();
   exibirRecomendacaoDeEstudo();
-  exibirExemplosDeMetodos();
+  exibirPrimeiraVagaRemota();
 
   finalizarAnalise(candidato.nome, exibirMensagemFinal);
 };
